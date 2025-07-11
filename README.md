@@ -2,13 +2,13 @@
 This project aims to improve the quality of images through deblurring (sharpening) of blurred images through a deep learning process driven by Knowledge Distillation (KD). A teacher deep U-Net model is initially trained and its knowledge is then distilled in a smaller student model performing effective deblurring for deployment in real-time systems. 
 
 
-To clone this repositary
+To clone this repository
 ```
 git clone https://github.com/Suj93s/Intel-Unnati
 ```
 
 ## Tools Used
-- Pytorch : Deep learning framework used to build and train both teacher and student CNN architectures.
+- PyTorch : Deep learning framework used to build and train both teacher and student CNN architectures.
 - Torchvision: Used for common image transformation utilities and handling datasets.
 - NumPy: For efficient numerical computations and tensor manipulation.
 - Pillow (PIL): Image loading, filtering (Gaussian blur), and augmentation.
@@ -35,11 +35,11 @@ Showed that deep learning can reversely correct blur artifacts given enough pair
 
 ### Quantitative Results:
 
-Blurred Input: PSNR = 24.98 dB, SSIM = 0.7622
-
-Teacher Model: PSNR = 31.83 dB, SSIM = 0.948
-
-Student Model: PSNR = 31.61 dB, SSIM = 0.9325
+| Model         | PSNR (dB) | SSIM    |
+|---------------|-----------|---------|
+| Blurred Input | 24.98     | 0.7622  |
+| Teacher Model | 31.83     | 0.948   |
+| Student Model | 31.61     | 0.9325  |
 
 The model provides cutting-edge performance with a significant cut in inference time, and it is best suited for real-time use cases like:
 
