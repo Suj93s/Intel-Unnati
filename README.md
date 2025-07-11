@@ -1,4 +1,4 @@
-# Intel Unnati - Image Sharpening using Knowlege Distilation
+# Intel Unnati - Image Sharpening using knowledge distillation
 This project aims to improve the quality of images through deblurring (sharpening) of blurred images through a deep learning process driven by Knowledge Distillation (KD). A teacher deep U-Net model is initially trained and its knowledge is then distilled in a smaller student model performing effective deblurring for deployment in real-time systems. 
 
 
